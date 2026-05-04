@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root{
+    --black: #192a56;
+    --orange:#F95F1D;
+    --yellow:#ffa801;
+
+}
+
+*{ 
+ font-family: "Nunito Sans", sans-serif;
+margin:0; padding:0;
+box-sizing: border-box;
+text-transform: capitalize;
+
+text-decoration: none;
+outline: none; border:none;
+transition: 2s linear;
+}
+
+html{
+    font-size: 45%
+    overflow-x hidden;
+}
+
+section{
+    padding:0 7%;
+    padding-top: 7.5rem;
+    padding-bottom: 3rem;
+    min-height: 100vh;
+
+
+    .btn{
+        display: inline-block;
+       
+        background-color: yellow; 
+        margin-left: 2px; 
+        border-radius: 5px; 
+        padding: 10px ; 
+        position: realtive;
+        margin-top: 15px;
+        font-size: 16px;
+
+   
+    }
+    .btn:hover{
+        background:var(--yellow);
+        color:#211f60;
+    }
+
+    .heading{
+        text-align: center;
+        color: #211f60;
+        padding: 1rem;
+        text-transform: uppercase;
+        font-size: 2rem;
+        
+    }
+
+
+    
+}
+
+header{
+    position: fixed;
+    top:0; left:0;
+    width:100%;
+    z-index: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem 7%;
+    box-shadow: 0 .5rem 1 rem rgba(0,0,0,.1);
+    background:#fff;
+
+
+}
+header .logo{
+    width: 150px;
+    height: auto;
+}
+
+
+button{
+    background-color: yellow; 
+    margin-left: 10px; 
+    border-radius: 5px; 
+    padding: 10px; 
+    width: 90px;
+
+}
+button a{
+    color: black; font-weight: bold; font-size: 1rem;
+}
+ header .navbar a{
+   font-size: 1rem;
+   margin-left: 2.5rem;
+   color:var(--black);
+} 
+
+header .navbar a:hover{
+    color:var(--yellow);
+
+}
+
+#menu-bar{
+    font-size: 3rem;
+    color:var(--black);
+    cursor: pointer;
+    display:none;
+
+}
+/* login form and signup form */
+.login-container{
+    background-color: #fefefe;
+    margin: 180px auto 5% auto;
+    padding: 30px 25px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+.signup-container{
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.from-group input:focus{
+    border-color: #555;
+    outline: none;
+}
+.form-group button {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    background-color:hwb(240 1% 80% / 0.845) ;
+    color: white;
+    border: 2px solid var(--black);
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    margin-left: -3px;
+}
+
+.form-group button:hover {
+    background-color: black;
+}
+
+.form-group p{
+    font-size: 14px;
+    margin-top: 10px;
+    color: #555;
+}
+
+.form-group p a{
+    color: var(--black);
+    text-decoration: none;
+}
+
+.form-group p a:hover{
+    text-decoration: underline;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+   padding: 10px;
+ 
+}
+
+
+.home .small-image{
+   max-width: 100%;
+   height: auto;
+   object-fit: cover;
+   padding-top: 2rem;
+   flex: 1 1 30rem;
+    
+}
+
+.home .content{
+  
+   justify-content: center;
+ 
+    
+    padding:0 60px;
+    
+   
+
+}
+
+
+.home .content h3{
+    color:#211f60;
+    font-size: 4rem;
+    text-transform: uppercase;
+     flex-direction: column;
+     
+}
+
+.home .content p{
+    color:#211f60;
+    font-size: 1rem;
+}
+ 
+
+.about{
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+    background: white;
+
+}
+
+.about-container{
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+
+ .small-image {
+    width: 500px;
+    height: auto;
+    max-width:100%;
+    margin-top: 50px;
+    margin-right:50px;
+  
+   
+}
+
+.about-text{
+    max-width: 500px;
+    flex:1;
+    font-size: 1.1rem;
+    
+}
+
+.about-text h2{
+    margin-bottom: 20px;
+    font-size: 2rem;
+    padding: 60px 100px;
+    text-transform: uppercase;
+}
+
+
+  .about-text h2::after{
+    content: "";
+    width: 80px;
+    height: 5px;
+    display: block;
+    margin:6px auto;
+    border-radius: 8px;
+    background: yellow;
+
+
+
+}
+
+.about-text p{
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+ 
+.service{
+ background:var(--black);
+}
+
+.service .heading{
+    color: #fff;
+}
+
+.service .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.service .box-container .box{
+    padding: 1.5rem;
+    margin:1rem;
+    flex:1rem;
+    max-width: 50rem;
+    border: 1px solid #fff3;
+    text-align: center;
+    box-sizing: border-box;
+    
+    
+}
+ 
+.service .box-container .box h3{
+    font-size: 1rem;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.service .box-container .box p{
+    font-size: 0.5rem;
+    color:#fff;
+    padding-bottom:1rem;
+}
+
+ .service .small-image{
+    width: 90px;
+    max-width: 60%;
+}
+
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    border: 0.5rem solid rgba(0,0,0,.2);
+    box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+   width: 50%;
+}
+ .contact .row form{
+    flex: 1 1 40rem;
+    padding:2rem;
+ }
+
+ .contact .row form .inputBox{
+    position: relative;
+ }
+
+ .contact .row form .inputBox input, .contact .row form .inputBox textarea{
+    width: 90%;
+    margin: 1.5rem 0;
+    padding: .7rem 1rem;
+    font-size: 1rem;
+    color: #666;
+    border:0.5rem  solid rgba(0,0,0,.2);
+    
+ }
+
+    .contact .row form .inputBox textarea{
+        height: 15rem;
+        resize: none;
+    }
+
+    .contact .row form .inputBox label{
+        font-size: 1rem;
+        position: absolute;
+        top: 2.4rem; left:1rem;
+        color: #444;
+    }
+    
+     .contact .row form .inputBox input:focus ~ label,
+     .contact .row form .inputBox textarea:focus ~ label,
+     .contact .row form .inputBox input:valid ~ label,
+     .contact .row form .inputBox textarea:valid ~ label{
+        top:-.7rem; left:0;
+        color:var(--orange);
+     }
+
+
+     .footer{
+        background: var(--black);
+     }
+
+     .footer .box-container{
+        display:flex;
+        flex-wrap: wrap;
+     }
+
+     .footer .box-container .box{
+        margin:2rem;
+        flex: 1 1 25rem;
+
+     }
+
+     .footer .box-container .box h3{
+        font-size:1.5rem;
+        color: #fff;
+        padding: 5rem 0;
+     }
+
+      .footer .box-container .box a{
+        display:block;
+        font-size:1.5rem;
+        color: #fff;
+        padding: 1rem 0;
+     }
+
+     .footer a:hover{
+        text-decoration: underline;
+     }
+
+     .footer p{
+        color: #fff;
+
+     }
+
+     .footer .credit{
+        font-size:2rem;
+        background: #fff;
+        color: #444;
+        text-align: center;
+        padding: 1.5rem 1rem;
+     }
+
+     .footer .credit a{
+        color:var(--orange);
+     }

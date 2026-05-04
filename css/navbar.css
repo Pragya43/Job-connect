@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+:root {
+    --purple: #100216;
+    --blue: #1a0f41;
+    --white: #fff;
+    --light-bg: #f5f5f5;
+    --light-color: #484242;
+    --red: #c0392b;
+    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    color: #1a0f41;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    color:var(--blue);
+}
+
+.header .flex {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.header .logo {
+    width: 135px;
+}
+
+.header .navbar {
+    display: flex;
+    gap: 2rem;
+}
+
+.header .navbar a {
+    font-size: 1.6rem;
+    color: var(--blue);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.header .navbar a:hover {
+    color: var(--purple);
+}
+
+.header .icons {
+    gap: 1rem;
+    font-size: 2.2rem;
+    cursor: pointer;
+    color: var(--blue);
+}
+
+.user-box {
+    position: absolute;
+    top: 100%;
+    right: 2rem;
+    width: 220px;
+    background: var(--light-bg);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: none;
+    box-shadow: var(--box-shadow);
+}
+
+.user-box.active {
+    display: block;
+}
+
+.user-box p {
+    font-size: 1.4rem;
+    color: var(--light-color);
+    margin-bottom: 0.5rem;
+}
+
+.user-box span {
+    color: var(--blue);
+}
+
+.logout-btn {
+    display: block;
+    text-align: center;
+    padding: 0.6rem;
+    font-size: 1.2rem;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: var(--red);
+}
+#menu-btn{
+    display:none;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 0;
+        display: none;
+    }
+
+    .header .navbar.active {
+        display: flex;
+    }
+
+    .header .icons {
+        display: flex;
+    }
+#menu-btn{
+    display:inline-block;
+}
+}
